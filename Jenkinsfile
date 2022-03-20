@@ -12,7 +12,8 @@ pipeline {
     stages {
         stage("Awesome Stage") {
             steps {
-                echo "Current build version :: $BUILDVERSION"
+                echo "Version Name :: $BUILDVERSION"
+                echo "Version Code :: $BUILDVERSION"
             }
         }
         stage("git clone") {
